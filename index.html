@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎵 Adivina la peli de Disney</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>🎵 Adivina la peli de Disney</h1>
+  <div id="score">Puntuación: 0 / 50</div>
+  <div id="grid"></div>
+
+  <div id="controls">
+    <button id="reset">Reiniciar juego</button>
+    <button id="toggle-solutions">Mostrar soluciones</button>
+  </div>
+
+  <div id="victory-banner">
+    <h2>¡Has adivinado todas las canciones!</h2>
+    <button id="play-again">Volver a jugar</button>
+  </div>
+
+  <!-- Modal personalizado -->
+  <div id="answer-modal">
+    <div id="answer-box">
+      <input type="text" id="answer-input" placeholder="Escribe la peli de Disney..." />
+      <div id="suggestions"></div>
+      <button id="submit-answer">Aceptar</button>
+      <button id="cancel-answer">Salir</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
